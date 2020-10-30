@@ -11,6 +11,7 @@ namespace ParksApi.Models
     }
     public int NationalParkId { get; set; }
     public string NationalParkName { get; set; }
+    public string NationalParkDescription { get; set; }
     public string NationalParkLocation { get; set; }
     public virtual ICollection<StateJoin> States { get; set; }
   }
