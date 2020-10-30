@@ -28,30 +28,30 @@ You have the freedom to build out your APIs as you wish. At the very least, your
 
 ## Specs
 
-  1.[] Full CRUD for NationalParks 
+  1.[X] Full CRUD for NationalParks 
+    * Create: [Works]
+    * Read: [Works]
+    * Update: [Works]
+    * Destroy: [Untested]
+  
+  2.[] Full CRUD for StateParks 
     * Create: [Works]
     * Read: [Works]
     * Update: [Untested]
+    * Destroy: [Untested]
+  
+  3.[X] Full CRUD for States
+    * Create: [Works]
+    * Read: [Works]
+    * Update: [Works]
     * Destroy: [Works]
-  
-  2.[] Full CRUD for StatePars 
-    * Create: [Untested]
-    * Read: [Untested]
-    * Update: [Untested]
-    * Destroy: [Untested]
-  
-  3.[] Full CRUD for States
-    * Create: [Untested]
-    * Read: [Untested]
-    * Update: [Untested]
-    * Destroy: [Untested]
   
   4.[] Authentication
     * Functionality: [Works]
     * Documentation: [Incomplete]
 
   5.[] Swagger Documentation
-    * Functionality: [Untested]
+    * Functionality: [Works]
     * Documentation: [Incomplete]
 
 ## Setup/Installation Requirements
