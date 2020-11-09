@@ -31,27 +31,6 @@ namespace ParksApi
 
             services.AddCors();
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
-            services.AddSwaggerDocument(config =>
-            {
-                config.PostProcess = document =>
-                {
-                    document.Info.Version = "v1";
-                    document.Info.Title = "ToDo API";
-                    document.Info.Description = "A simple ASP.NET Core web API";
-                    document.Info.TermsOfService = "None";
-                    document.Info.Contact = new NSwag.OpenApiContact
-                    {
-                        Name = "Shayne Boyer",
-                        Email = string.Empty,
-                        Url = "https://twitter.com/spboyer"
-                    };
-                    document.Info.License = new NSwag.OpenApiLicense
-                    {
-                        Name = "Use under LICX",
-                        Url = "localhost:4000"
-                    };
-                };
-            });
 
             // configure strongly typed settings objects
             var appSettingsSection = Configuration.GetSection("AppSettings");
@@ -93,7 +72,6 @@ namespace ParksApi
 
             app.UseAuthentication();
             app.UseOpenApi();
-            app.UseSwaggerUi3();
             app.UseMvc();
         }
     }
