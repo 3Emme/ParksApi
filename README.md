@@ -34,7 +34,7 @@ You have the freedom to build out your APIs as you wish. At the very least, your
     * Update: [Works]
     * Destroy: [Works]
   
-  2.[] Full CRUD for StateParks 
+  2.[X] Full CRUD for StateParks 
     * Create: [Works]
     * Read: [Works]
     * Update: [Works]
@@ -46,18 +46,18 @@ You have the freedom to build out your APIs as you wish. At the very least, your
     * Update: [Works]
     * Destroy: [Works]
   
-  4.[] Authentication
+  4.[X] Authentication
     * Functionality: [Works]
     * Documentation: [Complete]
 
 ## Setup/Installation Requirements
 
-* First, recreate the database schema by connecting to a local instance within MySql Workbench (instal information can be found here if you have not already done so https://www.learnhowtoprogram.com/c-and-net/getting-started-with-c/installing-and-configuring-mysql)
+* First, recreate the database schema by connecting to a local instance within MySql Workbench (instal information can be found here if you have not already done so http://www.learnhowtoprogram.com/c-and-net/getting-started-with-c/installing-and-configuring-mysql)
 
 * Then, to run the application:
 * _open terminal_
 * _type "cd desktop", then press enter_
-* _type "git clone https://github.com/3emme/ParksApi", then press enter_
+* _type "git clone http://github.com/3emme/ParksApi", then press enter_
 * _locate and open directory on desktop named "ParksApi" with your console of choice_
 * _If necessary, update the appsettings.json file with your personal mysql username/password:_
   * {"ConnectionStrings": {"DefaultConnection": "Server=localhost;Port=3306;database=parks_api;uid={YOUR USERNAME};pwd={YOUR PASSWORD}"}
@@ -74,7 +74,7 @@ Explore the API endpoints in Postman or a browser. You will not be able to utili
 
 ### Using the JSON Web Token
 In order to be authorized to use the POST, PUT, DELETE functionality of the API, please authenticate yourself through Postman.
-* Open Postman and create a POST request using the URL: `http://localhost:4000/api/users/authenticate`
+* Open Postman and create a POST request using the URL: `http://localhost:4000/users/authenticate`
 * Add the following query to the request as raw data in the Body tab:
 ```
 {
@@ -86,13 +86,13 @@ In order to be authorized to use the POST, PUT, DELETE functionality of the API,
 
 #### Example Query
 ```
-https://localhost:4000/api/nationalparks/?name=crater
+http://localhost:4000/api/nationalparks/?name=crater
 ```
 
 ..........................................................................................
 
 ### Endpoints
-Base URL: `https://localhost:4000`
+Base URL: `http://localhost:4000`
 
 #### HTTP Request Structure
 ```
@@ -105,7 +105,7 @@ DELETE /api/{component}/{id}
 
 #### Example Query
 ```
-https://localhost:5000/api/nationalparks/1
+http://localhost:4000/api/nationalparks/1
 ```
 
 #### Sample JSON Response
@@ -139,7 +139,7 @@ DELETE /api/nationalparks/{id}
 
 #### Example Query
 ```
-https://localhost:4000/api/beverage/?name=crater
+http://localhost:4000/api/nationalparks/?name=crater
 ```
 
 #### Sample JSON Response
@@ -172,7 +172,7 @@ DELETE /api/stateparks/{id}
 
 #### Example Query
 ```
-https://localhost:4000/api/beverage/?name=bates
+http://localhost:4000/api/stateparks/?name=bates
 ```
 
 #### Sample JSON Response
